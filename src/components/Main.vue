@@ -14,18 +14,10 @@ export default {
 };
 </script>
 
-<style lang="scss" >
-main {
-  margin: 0px;
-}
+<style lang="scss" scoped>
+@import "../assets/sass/style.scss";
 .bg-black {
   background-color: #1c1c1c;
   height: 150px;
-}
-.txt-white-important {
-  color: white;
-  font-weight: bold;
-  //   line height da togliere e fare una classe generica
-  line-height: 150px;
 }
 </style>
