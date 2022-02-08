@@ -9,16 +9,16 @@
         </ul>
         <!-- questa lista andrà poi messa con un v-for -->
         <ul>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
-          <li>Comics</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
+          <li>COMINCS</li>
         </ul>
       </div>
     </header>
@@ -31,10 +31,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" >
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .d-flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 ul {
   list-style-type: none;
