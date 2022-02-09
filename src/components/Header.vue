@@ -7,7 +7,9 @@
 
         <!-- questa lista andrà poi messa con un v-for -->
         <ul class="menu-list">
-          <li v-for="link in links" :key="link.text">{{ link.text }}</li>
+          <li v-for="link in links" :key="link.text">
+            {{ link.text }}
+          </li>
         </ul>
       </div>
     </header>
@@ -61,5 +63,12 @@ export default {
 .menu-list {
   font-size: 12px;
   color: #1c1c1c;
+}
+li {
+  cursor: pointer;
+}
+
+img {
+  padding: 10px;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <Jumbo />
     <Main />
     <Merchandise />
     <UpperFooter />
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import Jumbo from "./components/Content.vue";
 import BottomFooter from "./components/BottomFooter.vue";
 import UpperFooter from "./components/UpperFooter.vue";
 import Merchandise from "./components/Merchandise.vue";
@@ -23,6 +25,7 @@ export default {
     Merchandise,
     UpperFooter,
     BottomFooter,
+    Jumbo,
   },
 };
 </script>

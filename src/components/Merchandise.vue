@@ -2,9 +2,13 @@
   <div class="bg-blue">
     <section id="merchandise-links" class="container">
       <div>
-        <!--Da riempire con v-for-->
         <ul>
           <li v-for="link in links" :key="link.text">
+            <img
+              class="merch-img-size"
+              :src="require(`../assets/img/${link.img}`)"
+              alt=""
+            />
             <a href="#"> {{ link.text }}</a>
           </li>
         </ul>
@@ -21,23 +25,23 @@ export default {
       links: [
         {
           text: "DIGITAL COMICS",
-          img: "../assets/img/buy-comics-digital-comics.png",
+          img: "buy-comics-digital-comics.png",
         },
         {
           text: "DC MERCHANDISE",
-          img: "../assets/img/buy-comics-digital-comics.png",
+          img: "buy-comics-merchandise.png",
         },
         {
           text: "SUBSCRIPTION",
-          img: "../assets/img/buy-comics-subscriptions.png",
+          img: "buy-comics-subscriptions.png",
         },
         {
           text: "COMIC SHOP LOCATOR",
-          img: "../assets/img/buy-comics-shop-locator.png",
+          img: "buy-comics-shop-locator.png",
         },
         {
           text: "DC POWER VISA",
-          img: "../assets/img/buy-dc-power-visa.svg",
+          img: "buy-dc-power-visa.svg",
         },
       ],
     };
@@ -54,7 +58,11 @@ export default {
   align-items: center;
 }
 .merch-img-size {
-  height: 50px;
+  height: 40px;
   padding: 0 5px;
+}
+li a {
+  font-size: 16px;
+  font-weight: normal;
 }
 </style>

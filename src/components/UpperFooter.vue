@@ -86,6 +86,7 @@ li {
   font-weight: normal;
   font-size: 14px;
   color: gray;
+  cursor: pointer;
   h3 {
     color: white;
   }

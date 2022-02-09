@@ -7,7 +7,10 @@
           <ul class="d-flex">
             <li class="txt-blue fw-bold">FOLLOW US</li>
             <li v-for="image in images" :key="image.url">
-              <img :src="image.url" :alt="image.alt" />
+              <img
+                :src="require(`../assets/img/${image.url}`)"
+                :alt="image.alt"
+              />
             </li>
           </ul>
         </div>
@@ -24,23 +27,23 @@ export default {
     return {
       images: [
         {
-          url: "../assets/img/footer-facebook.png",
+          url: "footer-facebook.png",
           alt: "Facebook",
         },
         {
-          url: "../assets/img/footer-periscope.png",
+          url: "footer-periscope.png",
           alt: "Periscope",
         },
         {
-          url: "../assets/img/footer-pinterest.png",
+          url: "footer-pinterest.png",
           alt: "Pinterest",
         },
         {
-          url: "../assets/img/footer-twitter.png",
+          url: "footer-twitter.png",
           alt: "Twitter",
         },
         {
-          url: "../assets/img/footer-youtube.png",
+          url: "footer-youtube.png",
           alt: "Youtube",
         },
       ],
@@ -55,6 +58,7 @@ export default {
   background-color: #303030;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 .bg-gray {
   background-color: #303030;
